@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier | Analytics</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#c0262d",
+                        "surface": "#fffcf7",
+                        "surface-dim": "#e5e2dc",
+                        "on-tertiary-container": "#004f59",
+                        "secondary": "#93524d",
+                        "tertiary": "#006f7c",
+                        "surface-container-highest": "#eae8e2",
+                        "on-surface": "#383835",
+                        "outline": "#82807c",
+                        "inverse-surface": "#0e0e0c",
+                        "on-primary-fixed": "#052257",
+                        "primary-fixed": "#a7bdfb",
+                        "primary": "#4d639b",
+                        "on-background": "#383835",
+                        "surface-container": "#f6f3ee",
+                        "secondary-dim": "#854742",
+                        "surface-bright": "#fffcf7",
+                        "surface-container-low": "#fcf9f4",
+                        "secondary-container": "#ffc3be",
+                        "on-tertiary-fixed-variant": "#005964",
+                        "on-secondary-fixed-variant": "#7b3f3b",
+                        "on-secondary-fixed": "#592420",
+                        "error-container": "#fb5151",
+                        "on-surface-variant": "#656461",
+                        "on-primary-container": "#21386e",
+                        "primary-container": "#a7bdfb",
+                        "surface-variant": "#eae8e2",
+                        "inverse-primary": "#a7bdfb",
+                        "surface-tint": "#4d639b",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#88dfef",
+                        "outline-variant": "#bbb9b4",
+                        "inverse-on-surface": "#9e9d98",
+                        "on-tertiary-fixed": "#003a42",
+                        "tertiary-fixed-dim": "#79d1e0",
+                        "surface-container-high": "#f0eee8",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#88dfef",
+                        "on-error-container": "#570008",
+                        "background": "#fffcf7",
+                        "secondary-fixed-dim": "#ffafa8",
+                        "error-dim": "#9f0519",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#99afec",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffc3be",
+                        "on-secondary-container": "#703632",
+                        "on-primary-fixed-variant": "#2a4177",
+                        "on-primary": "#ffffff",
+                        "primary-dim": "#40578e",
+                        "tertiary-dim": "#00626e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#fffcf7] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full top-0 z-40 fixed border-b border-surface-container">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="professional portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwOJ18SmA_YVlWCsVwxdlk4yTvcA-zzUVr-CNlOYXLBj7ovW-6bwpmaxRncyOT57qhvs62-if_ANe-oxDihBue1Srp2tsmbIsJh93NWxlxIqpTFQSTeqRJW06dQuibzU09dQmC1v7iVsdn9d5YqCeeM37GZhIvxpwXeNR1BtOeaUdKAUDSdFltxYZnXCkoUL3LyPzb_zCXkXMck8zhuLn0AMqcb0xmEZwAVJphkzgcROmhab16eIcN41Z7ZErpsyGJguqUEdOMeZb-"/>
+</div>
+<span class="text-xl font-bold font-manrope text-[#383835] dark:text-[#fcf9f4]">The Atelier</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-[#4d639b] hover:bg-[#fcf9f4] transition-colors tap-highlight-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 md:px-8 max-w-2xl mx-auto">
+<!-- Performance Analytics Header -->
+<div class="mb-8">
+<h1 class="text-3xl font-extrabold font-headline mb-6 tracking-tight">Performance Analytics</h1>
+<div class="flex gap-2 p-1 bg-surface-container rounded-2xl w-full overflow-x-auto no-scrollbar">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-xl font-semibold text-sm transition-all bg-surface-container-lowest text-primary shadow-sm">Instagram</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-xl font-medium text-sm text-on-surface-variant hover:bg-surface-container-low transition-all">TikTok</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-xl font-medium text-sm text-on-surface-variant hover:bg-surface-container-low transition-all">LinkedIn</button>
+</div>
+</div>
+<!-- Compact Key Metrics Grid -->
+<div class="grid grid-cols-1 gap-4 mb-10">
+<!-- Metric Card 1: Engagement (COMPACT VERSION) -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-surface-container flex justify-between items-center relative overflow-hidden group">
+<div>
+<p class="text-on-surface-variant text-sm font-medium mb-1">Engagement Rate</p>
+<div class="flex items-baseline gap-3">
+<h2 class="text-3xl font-extrabold font-headline text-primary">4.82%</h2>
+<div class="flex items-center gap-1 text-tertiary text-xs font-bold">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+<span>+12.4%</span>
+</div>
+</div>
+</div>
+<!-- Small Bar Chart -->
+<div class="flex items-end gap-1 h-8">
+<div class="w-1 bg-primary/20 rounded-full h-[40%]"></div>
+<div class="w-1 bg-primary/20 rounded-full h-[60%]"></div>
+<div class="w-1 bg-primary/20 rounded-full h-[50%]"></div>
+<div class="w-1 bg-primary/20 rounded-full h-[80%]"></div>
+<div class="w-1 bg-primary rounded-full h-[95%]"></div>
+</div>
+</div>
+<!-- Metric Card 2: Reach -->
+<div class="bg-primary-container/20 p-6 rounded-3xl border border-primary/10">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="text-on-primary-container text-sm font-medium mb-1">Total Reach</p>
+<h2 class="text-3xl font-extrabold font-headline text-on-primary-container">128.4k</h2>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center text-[10px] uppercase tracking-wider font-bold">
+<span class="text-on-surface-variant">Organic (84%)</span>
+<span class="text-on-surface-variant">Paid (16%)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 flex overflow-hidden">
+<div class="bg-primary h-full w-[84%]"></div>
+<div class="bg-secondary h-full w-[16%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Competitor Comparison Section (NEW) -->
+<section class="mb-10">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-bold font-headline">Competitor Comparison</h3>
+<button class="text-primary font-semibold text-xs hover:underline">Full Report</button>
+</div>
+<div class="space-y-3">
+<!-- Competitor 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-bold text-on-surface-variant">M</div>
+<div class="flex-1 grid grid-cols-2 gap-2">
+<div>
+<p class="text-[10px] uppercase text-on-surface-variant font-medium">Growth</p>
+<p class="text-sm font-bold text-on-surface">9.1%</p>
+</div>
+<div>
+<p class="text-[10px] uppercase text-on-surface-variant font-medium">Sentiment</p>
+<p class="text-sm font-bold text-on-surface">Neutral</p>
+</div>
+</div>
+</div>
+<!-- Competitor 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-surface-container flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-bold text-on-surface-variant">V</div>
+<div class="flex-1 grid grid-cols-2 gap-2">
+<div>
+<p class="text-[10px] uppercase text-on-surface-variant font-medium">Growth</p>
+<p class="text-sm font-bold text-on-surface">11.4%</p>
+</div>
+<div>
+<p class="text-[10px] uppercase text-on-surface-variant font-medium">Sentiment</p>
+<p class="text-sm font-bold text-on-surface">Stable</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Content Calendar Section (COMPACT WIDGET) -->
+<section class="mb-10">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-bold font-headline">Content Calendar</h3>
+<button class="text-primary font-semibold text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+                    Planner
+                </button>
+</div>
+<!-- Horizontal Scrollable Preview Widget -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+<!-- Mini Card 1 -->
+<div class="flex-shrink-0 w-32 relative aspect-[4/5] rounded-2xl overflow-hidden group">
+<img alt="Planned post" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7F5SbhycNI4sn1AhGsVzDkv5VYjasoR5cBm12gWqzaiFjFQSmgdGt0_wTa4ggIZ6Pi6nVnUM28JSuElPz4kdlOQTE3zEp7dTL9XzCsV_sgI15D-e9dr42w8In_3N9GXbFM9oDGM8fDvFjFbwbGsQfjWX1J-ScbT-pku1IglUeUTNEKNVOLpXARargieeB3uUa4LOK£
