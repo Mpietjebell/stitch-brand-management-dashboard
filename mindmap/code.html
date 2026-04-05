@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier - Company Mindmap</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#c0262d",
+                        "surface": "#fffcf7",
+                        "surface-dim": "#e5e2dc",
+                        "on-tertiary-container": "#004f59",
+                        "secondary": "#93524d",
+                        "tertiary": "#006f7c",
+                        "surface-container-highest": "#eae8e2",
+                        "on-surface": "#383835",
+                        "outline": "#82807c",
+                        "inverse-surface": "#0e0e0c",
+                        "on-primary-fixed": "#052257",
+                        "primary-fixed": "#a7bdfb",
+                        "primary": "#4d639b",
+                        "on-background": "#383835",
+                        "surface-container": "#f6f3ee",
+                        "secondary-dim": "#854742",
+                        "surface-bright": "#fffcf7",
+                        "surface-container-low": "#fcf9f4",
+                        "secondary-container": "#ffc3be",
+                        "on-tertiary-fixed-variant": "#005964",
+                        "on-secondary-fixed-variant": "#7b3f3b",
+                        "on-secondary-fixed": "#592420",
+                        "error-container": "#fb5151",
+                        "on-surface-variant": "#656461",
+                        "on-primary-container": "#21386e",
+                        "primary-container": "#a7bdfb",
+                        "surface-variant": "#eae8e2",
+                        "inverse-primary": "#a7bdfb",
+                        "surface-tint": "#4d639b",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#88dfef",
+                        "outline-variant": "#bbb9b4",
+                        "inverse-on-surface": "#9e9d98",
+                        "on-tertiary-fixed": "#003a42",
+                        "tertiary-fixed-dim": "#79d1e0",
+                        "surface-container-high": "#f0eee8",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#88dfef",
+                        "on-error-container": "#570008",
+                        "background": "#fffcf7",
+                        "secondary-fixed-dim": "#ffafa8",
+                        "error-dim": "#9f0519",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#99afec",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffc3be",
+                        "on-secondary-container": "#703632",
+                        "on-primary-fixed-variant": "#2a4177",
+                        "on-primary": "#ffffff",
+                        "primary-dim": "#40578e",
+                        "tertiary-dim": "#00626e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mindmap-bg {
+            background-image: radial-gradient(#bbb9b4 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .connection-line {
+            stroke: #bbb9b4;
+            stroke-width: 1.5px;
+            fill: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen overflow-x-hidden">
+<!-- Shared TopAppBar -->
+<header class="bg-[#fffcf7] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center overflow-hidden">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling young professional man in a bright modern studio with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD_jD7g_3gLo82qEvABhrM7dvn-arqgWY8wIsSuymZiS6zqeH6wbFemG4xMI81Ymy2Bf4TmfyQ0juqqmpmYxHyS_U_EyHYvtEiQQS9rYZB46Zz-lPcCdTrQQ_g8ifBKRziCPku6zeFrApMrBOQ8ybF_HmgybxTaIRlxnWWiS3ppVn5eXzk2egXuzIlvLsqgFDWzaGbYyjL5HQ48OAWiEr-RttWDPOc_til90NN6H1Q54lDEXGhflfzbW7YrWhYHI2ehr5JrP17xsTU"/>
+</div>
+<h1 class="text-xl font-bold font-headline text-[#383835] dark:text-[#fcf9f4]">The Atelier</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#656461] dark:text-[#bbb9b4] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 p-2 rounded-full transition-all active:scale-95">search</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-6 min-h-screen flex flex-col items-center mindmap-bg">
+<!-- Header Section -->
+<div class="w-full max-w-6xl mb-12 flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-headline font-extrabold tracking-tight text-on-surface mb-2">Company Map</h2>
+<p class="text-on-surface-variant font-medium">Strategic structure and team architecture</p>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-headline font-bold flex items-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'wght' 600;">add</span>
+                Create New Node
+            </button>
+</div>
+<!-- Mindmap Interface -->
+<div class="relative w-full max-w-6xl h-[600px] flex items-center justify-center">
+<!-- SVG Connector Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
+<!-- Lines from Center to Departments -->
+<path class="connection-line" d="M 576 300 Q 576 150 400 150"></path> <!-- Marketing -->
+<path class="connection-line" d="M 576 300 Q 576 150 752 150"></path> <!-- Sales -->
+<path class="connection-line" d="M 576 300 Q 576 450 400 450"></path> <!-- Product -->
+<path class="connection-line" d="M 576 300 Q 576 450 752 450"></path> <!-- HR -->
+<!-- Expanded Sub-node Lines -->
+<path class="connection-line opacity-40" d="M 400 150 L 300 100"></path>
+<path class="connection-line opacity-40" d="M 400 150 L 300 200"></path>
+</svg>
+<!-- Central Hub -->
+<div class="relative z-10">
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-full shadow-[0_12px_32px_rgba(56,56,53,0.06)] flex flex-col items-center justify-center text-center w-56 h-56 border-none">
+<div class="bg-primary-container/30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+</div>
+<span class="font-headline font-extrabold text-lg text-on-surface">The Atelier</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant mt-1">HQ Core</span>
+</div>
+</div>
+<!-- Marketing Branch -->
+<div class="absolute top-[80px] left-[250px] group">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border-none w-48 flex items-center gap-4 transition-all hover:-translate-y-1 hover:shadow-md cursor-pointer">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[20px]">campaign</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Marketing</p>
+<p class="text-[10px] text-on-surface-variant font-medium">8 Team Members</p>
+</div>
+</div>
+<!-- Mini Expandable Indicator -->
+<div class="absolute -right-2 top-1/2 -translate-y-1/2 bg-surface-container-highest w-6 h-6 rounded-full flex items-center justify-center text-[14px] text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+</div>
+</div>
+<!-- Sales Branch -->
+<div class="absolute top-[80px] right-[250px] group">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border-none w-48 flex items-center gap-4 transition-all hover:-translate-y-1 hover:shadow-md cursor-pointer">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Sales</p>
+<p class="text-[10px] text-on-surface-variant font-medium">12 Team Members</p>
+</div>
+</div>
+</div>
+<!-- Product Branch -->
+<div class="absolute bottom-[80px] left-[250px] group">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border-none w-48 flex items-center gap-4 transition-all hover:translate-y-1 hover:shadow-md cursor-pointer">
+<div class="w-10 h-10 rounded-xl bg-primary-container/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Product</p>
+<p class="text-[10px] text-on-surface-variant font-medium">24 Team Members</p>
+</div>
+</div>
+</div>
+<!-- HR Branch -->
+<div class="absolute bottom-[80px] right-[250px] group">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border-none w-48 flex items-center gap-4 transition-all hover:translate-y-1 hover:shadow-md cursor-pointer">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest/60 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">groups</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">HR</p>
+<p class="text-[10px] text-on-surface-variant font-medium">4 Team Members</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Utility Sidebar / Tools (Asymmetric Design) -->
+<div class="w-full max-w-6xl mt-16 grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-4 space-y-6">
+<div class="bg-surface-container p-8 rounded-3xl">
+<h3 class="font-headline font-bold text-lg mb-4 text-on-surface">Map Statistics</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<span class="text-sm text-on-surface-variant">Active Nodes</span>
+<span class="font-bold">48</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-sm text-on-surface-variant">Team Velocity</span>
+<span class="text-tertiary font-bold">+12%</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<div class="flex -space-x-2">
+<img alt="Team member" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="Portrait of a creative woman in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIVwWOmlPBlW5M0xdteYyI4LOVXMEI0cqF5R46JwTSPq7dTNicSXyr6xjnlkI9rEWVUQRrVmYgMbn6kPmq7pYZyiaiD1EBR2d9ujLU99TzkyttbKzOcIV3hY2ioNLUwtDEXCA_9BfFpJGaJ312r3z17TG_QbXQRBgqjjAC67SY7Xeh3EfhNdF2ltJIMqaQtrJz_FzrmxgKxov1Lom-RAztzso_Iu_PryyKRRdAoe8uXUbbJR2qChFTU9J8TlUtQWMWwg6ghigetK2w"/>
+<img alt="Team member" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="Professional man in tech office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJf3KRSmk3k4rawE0d5ECni6i6w-XzeE0AMn6jl5fPA0nMjwZEZHsOoE6eEGPl1yA-JbIv7priCK77ZsPcOC-FQhBWNf2PnN-I8ilHb_WxYO7XD2X8K7GfHNWzjQLMS9yJwC5UQrv4uGeZ6K1bpIkKAVKeZ07oSrUaGDU814KgckCkEMFfivgtMjL2rbomSUl8H9bqRE2XNTUT1Yp-LP8LpmIFYAsYP_CnfmtxYys2LwjtaknX2wJ-z2EMSHhiC6FJEeSlfSd1VuEl"/>
+<img alt="Team member" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="Candid photo of a female designer at work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsmU0zSu2d0VLZkJoZqVQAJBTuPEWMPA0RNtYe42IHKSSJQvkZuRIKPXPzxoKmsXhNad96HDu3LyG8AciaQ0DqdScMWP_TIN7WrDX-eOwFysIc8OAE1AhKsSg_UWB0uNIc3g257W7a0Id0k3Bjn19DMZMTxYEvsyYPrYrCxNrzyRKYa_cR4McE48hizL5PVx8gCe95tm_-afO1bZeNgl6FZs5sQ1MAWdCjjhhza46qDKs9gCh_s6wrdGzTkmeaVFMg58sYz5SzjWnB"/>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-primary-container text-on-primary-container text-[10px] flex items-center justify-center font-bold">+45</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8">
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm h-full flex flex-col justify-center">
+<div class="flex items-start gap-6">
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl mb-2 text-on-surface">Interactive Preview</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Zoom and drag to navigate the full organizational hierarchy. Click any department node to see sub-teams, direct reports, and resource allocation across the entire Atelier ecosystem.</p>
+<div class="flex gap-4">
+<button class="text-primary font-bold text-sm flex items-center gap-2 hover:underline">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                                    Open Fullscreen
+                                </button>
+<button class="text-on-surface-variant font-bold text-sm flex items-center gap-2 hover:underline">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                                    Export PDF
+                                </button>
+</div>
+</div>
+<div class="hidden lg:block w-48 h-32 bg-surface-container rounded-2xl overflow-hidden relative border-none">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<img alt="Abstract map" class="w-full h-full object-cover mix-blend-multiply opacity-50" data-alt="Modern abstract architectural blueprint with clean lines and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw1UWPGl_gtIX4kcDIx1PhPXfOhA-uM0dCC9huDZyfRQ0a9l_-MBrj4a-Bxmyy0S6XiO0VZBtpOM61nQ1XevBAHfi0UL3fb2cf6rR6JDWr5dbEOOqR1kjKlm39hKq8ylwgOdhk1aYuqI8JZId1mxrmwjeVkeX15qOq4lTG0l5AUoiKNugZ-M8ux8NVZiTjzXHMZhQfTzUEjTL7iLn32NYjyP20O4h1WAslv3Y-8z4ObseuWo64ytnNXyEkXYNYAm0P_GNu158vE9aO"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Shared BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_-12px_32px_rgba(56,56,53,0.04)] rounded-t-3xl md:hidden">
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-inter text-[10px] font-medium tracking-tight mt-1">Dash</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-inter text-[10px] font-medium tracking-tight mt-1">News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-inter text-[10px] font-medium tracking-tight mt-1">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-inter text-[10px] font-medium tracking-tight mt-1">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#ffc3be] dark:bg-[#4d639b]/30 text-[#383835] dark:text-[#fcf9f4] rounded-full px-4 py-1 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-inter text-[10px] font-medium tracking-tight mt-1">Map</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Anchors -->
+<div class="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 flex-col gap-6 z-40">
+<div class="bg-surface-container-lowest p-3 rounded-full shadow-sm flex flex-col gap-4">
+<button class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">zoom_in</span></button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">zoom_out</span></button>
+<div class="w-8 h-[1px] bg-outline-variant/30 mx-auto"></div>
+<button class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">center_focus_weak</span></button>
+</div>
+</div>
+</body></html>
