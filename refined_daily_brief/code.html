@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier - Daily Brief</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#c0262d",
+                    "surface": "#fffcf7",
+                    "surface-dim": "#e5e2dc",
+                    "on-tertiary-container": "#004f59",
+                    "secondary": "#93524d",
+                    "tertiary": "#006f7c",
+                    "surface-container-highest": "#eae8e2",
+                    "on-surface": "#383835",
+                    "outline": "#82807c",
+                    "inverse-surface": "#0e0e0c",
+                    "on-primary-fixed": "#052257",
+                    "primary-fixed": "#a7bdfb",
+                    "primary": "#4d639b",
+                    "on-background": "#383835",
+                    "surface-container": "#f6f3ee",
+                    "secondary-dim": "#854742",
+                    "surface-bright": "#fffcf7",
+                    "surface-container-low": "#fcf9f4",
+                    "secondary-container": "#ffc3be",
+                    "on-tertiary-fixed-variant": "#005964",
+                    "on-secondary-fixed-variant": "#7b3f3b",
+                    "on-secondary-fixed": "#592420",
+                    "error-container": "#fb5151",
+                    "on-surface-variant": "#656461",
+                    "on-primary-container": "#21386e",
+                    "primary-container": "#a7bdfb",
+                    "surface-variant": "#eae8e2",
+                    "inverse-primary": "#a7bdfb",
+                    "surface-tint": "#4d639b",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#88dfef",
+                    "outline-variant": "#bbb9b4",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-tertiary-fixed": "#003a42",
+                    "tertiary-fixed-dim": "#79d1e0",
+                    "surface-container-high": "#f0eee8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#88dfef",
+                    "on-error-container": "#570008",
+                    "background": "#fffcf7",
+                    "secondary-fixed-dim": "#ffafa8",
+                    "error-dim": "#9f0519",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#99afec",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffc3be",
+                    "on-secondary-container": "#703632",
+                    "on-primary-fixed-variant": "#2a4177",
+                    "on-primary": "#ffffff",
+                    "primary-dim": "#40578e",
+                    "tertiary-dim": "#00626e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#fffcf7] dark:bg-stone-950 fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="User profile photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFJpBINmn__3nZKT8Qs1R2UcI5On8urW1vPhJKzr0XF50D3e8iSx3bCQ5XL3zxButC_CAJSyC0Kw6WvJ7ZkBFWHB5Wtz5Tcy6w2qhjpuE7X5dWov_DDqy_3v4vO_Sz0BSTH6D9ulUd15P41LO2Sajyxj8S6J-uXWVa6WHh2MLZF0ACOy9_X1DQek9VHzWiYMdGqArApIeSvw6iUz82t1yBp4l6cG1GXigYYx0Hxt61-70Kxmt6tNzCLWD-bHfU5mPMCcy0l7boI_dA"/>
+</div>
+<span class="text-xl font-bold tracking-tight text-[#383835] dark:text-[#fcf9f4] font-manrope">Digital Atelier</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#4d639b] dark:text-[#a7bdfb] hover:bg-[#f0eee8] dark:hover:bg-stone-800 transition-colors p-2 rounded-full active:scale-95 duration-200 ease-in-out" data-icon="notifications">notifications</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 pt-20 pb-32">
+<!-- Dashboard Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Growth Stats & New Sections -->
+<section class="md:col-span-8 space-y-8">
+<div class="flex justify-between items-end px-2">
+<div>
+<h1 class="text-3xl font-extrabold tracking-tight text-on-surface">Daily Brief</h1>
+<p class="text-on-surface-variant font-medium">Performance summary for this week</p>
+</div>
+</div>
+<!-- Updated Metric Tabs Section: 5 side by side -->
+<div class="flex justify-between gap-2 overflow-x-auto no-scrollbar pb-2 px-2">
+<!-- Shopify Sales Tab -->
+<div class="flex-1 min-w-[64px] bg-surface-container-low p-2 rounded-2xl flex flex-col items-center text-center shadow-sm border border-outline-variant/10">
+<div class="p-2 bg-[#88dfef] rounded-full text-on-tertiary-container mb-1">
+<span class="material-symbols-outlined text-lg block" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<p class="text-[9px] font-bold text-on-surface-variant leading-tight">Sales</p>
+<p class="text-[11px] font-extrabold text-on-surface">$14k</p>
+<span class="text-[8px] text-tertiary font-bold">+18%</span>
+</div>
+<!-- Website Visits Tab -->
+<div class="flex-1 min-w-[64px] bg-surface-container-low p-2 rounded-2xl flex flex-col items-center text-center shadow-sm border border-outline-variant/10">
+<div class="p-2 bg-primary-fixed rounded-full text-on-primary-container mb-1">
+<span class="material-symbols-outlined text-lg block" data-icon="language">language</span>
+</div>
+<p class="text-[9px] font-bold text-on-surface-variant leading-tight">Visits</p>
+<p class="text-[11px] font-extrabold text-on-surface">18k</p>
+<span class="text-[8px] text-primary font-bold">+5%</span>
+</div>
+<!-- Instagram Tab -->
+<div class="flex-1 min-w-[64px] bg-surface-container-low p-2 rounded-2xl flex flex-col items-center text-center shadow-sm border border-outline-variant/10">
+<div class="p-2 bg-[#ffc3be] rounded-full text-on-secondary-container mb-1">
+<span class="material-symbols-outlined text-lg block" data-icon="camera">camera</span>
+</div>
+<p class="text-[9px] font-bold text-on-surface-variant leading-tight">Insta</p>
+<p class="text-[11px] font-extrabold text-on-surface">42k</p>
+<span class="text-[8px] text-tertiary font-bold">+12%</span>
+</div>
+<!-- TikTok Tab -->
+<div class="flex-1 min-w-[64px] bg-surface-container-low p-2 rounded-2xl flex flex-col items-center text-center shadow-sm border border-outline-variant/10">
+<div class="p-2 bg-primary-container rounded-full text-on-primary-container mb-1">
+<span class="material-symbols-outlined text-lg block" data-icon="video_library">video_library</span>
+</div>
+<p class="text-[9px] font-bold text-on-surface-variant leading-tight">TikTok</p>
+<p class="text-[11px] font-extrabold text-on-surface">115k</p>
+<span class="text-[8px] text-tertiary font-bold">+8%</span>
+</div>
+<!-- LinkedIn Tab -->
+<div class="flex-1 min-w-[64px] bg-surface-container-low p-2 rounded-2xl flex flex-col items-center text-center shadow-sm border border-outline-variant/10">
+<div class="p-2 bg-surface-dim rounded-full text-on-surface mb-1">
+<span class="material-symbols-outlined text-lg block" data-icon="work">work</span>
+</div>
+<p class="text-[9px] font-bold text-on-surface-variant leading-tight">Linked</p>
+<p class="text-[11px] font-extrabold text-on-surface">12k</p>
+<span class="text-[8px] text-on-surface-variant font-bold">+1%</span>
+</div>
+</div>
+<!-- Latest DMs Section -->
+<div class="px-2">
+<h2 class="text-2xl font-extrabold mb-4">Latest DMs</h2>
+<div class="bg-surface-container rounded-3xl p-4 space-y-4">
+<div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-2xl">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-primary-container">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFJpBINmn__3nZKT8Qs1R2UcI5On8urW1vPhJKzr0XF50D3e8iSx3bCQ5XL3zxButC_CAJSyC0Kw6WvJ7ZkBFWHB5Wtz5Tcy6w2qhjpuE7X5dWov_DDqy_3v4vO_Sz0BSTH6D9ulUd15P41LO2Sajyxj8S6J-uXWVa6WHh2MLZF0ACOy9_X1DQek9VHzWiYMdGqArApIeSvw6iUz82t1yBp4l6cG1GXigYYx0Hxt61-70Kxmt6tNzCLWD-bHfU5mPMCcy0l7boI_dA"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-0.5">
+<h4 class="font-bold text-on-surface">Sarah Jenkins</h4>
+<span class="text-[10px] text-on-surface-variant font-medium">2m ago</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-1">Loved the new collection! Is the silk dress back in stock soon?</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-2xl">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-tertiary-container">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSVvU3Jv_H6Yv_u88W13Zl69A0L5NfV9K_uCgVz_tW5K_P9m2E_eXzU_oW6Jv5f9m2E_eXzU_oW6Jv5f9m2E_eXzU_oW6Jv5f9m2E_eXzU_oW6Jv5f9m2E_eXzU_oW6Jv5f"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-0.5">
+<h4 class="font-bold text-on-surface">Marc O'Reilly</h4>
+<span class="text-[10px] text-on-surface-variant font-medium">1h ago</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-1">Just sent over the final brand guidelines for the collab.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Latest Orders Section - REDESIGNED TO BE COMPACT -->
+<div class="px-2">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-2xl font-extrabold">Latest Orders</h2>
+<button class="text-primary text-xs font-bold">See all</button>
+</div>
+<div class="bg-surface-container rounded-2xl overflow-hidden shadow-sm">
+<div class="divide-y divide-outline-variant/5">
+<div class="flex items-center justify-between py-2.5 px-4 bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="flex flex-col">
+<h4 class="text-xs font-bold text-on-surface">Emma Thompson</h4>
+<span class="text-[10px] text-on-surface-variant">#8842</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-bold text-on-surface">$124</span>
+<span class="text-[9px] font-bold py-0.5 px-2 bg-primary-container/40 text-on-primary-container rounded-md uppercase tracking-wider">Shipped</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2.5 px-4 bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="flex flex-col">
+<h4 class="text-xs font-bold text-on-surface">David Chen</h4>
+<span class="text-[10px] text-on-surface-variant">#8841</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-bold text-on-surface">$89</span>
+<span class="text-[9px] font-bold py-0.5 px-2 bg-secondary-container/40 text-on-secondary-container rounded-md uppercase tracking-wider">Processing</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2.5 px-4 bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="flex flex-col">
+<h4 class="text-xs font-bold text-on-surface">Alice Walker</h4>
+<span class="text-[10px] text-on-surface-variant">#8840</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-bold text-on-surface">$210</span>
+<span class="text-[9px] font-bold py-0.5 px-2 bg-primary-container/40 text-on-primary-container rounded-md uppercase tracking-wider">Shipped</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tasks Section - UPDATED WITH NEW TASKS -->
+<div class="px-2">
+<h2 class="text-2xl font-extrabold mb-6">Tasks for today</h2>
+<div class="space-y-4">
+<!-- New Task 1 -->
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm border-l-4 border-error">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Review Q3 Strategy</h4>
+<p class="text-xs text-on-surface-variant">Board deck preparation for next week</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-error-container text-on-error-container rounded-full">High</span>
+</div>
+<!-- New Task 2 -->
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm border-l-4 border-error">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Sign Vendor Contracts</h4>
+<p class="text-xs text-on-surface-variant">Finalize logistics for European expansion</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-error-container text-on-error-container rounded-full">High</span>
+</div>
+<!-- Existing Tasks -->
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Review New Spring Collection</h4>
+<p class="text-xs text-on-surface-variant">Final pass on fabric samples and colorways</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full">High</span>
+</div>
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Approve Marketing Budget</h4>
+<p class="text-xs text-on-surface-variant">Q2 campaign allocation for social ads</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full">High</span>
+</div>
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Record "A Day in the Life" Reel</h4>
+<p class="text-xs text-on-surface-variant">Behind the scenes at the new studio opening</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full">High</span>
+</div>
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Update Bio Links</h4>
+<p class="text-xs text-on-surface-variant">Link the new spring collection pre-order</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-surface-container-high text-on-surface-variant rounded-full">Low</span>
+</div>
+<div class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-xl transition-all hover:translate-x-1 shadow-sm">
+<div class="w-6 h-6 rounded-md border-2 border-primary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm hidden group-hover:block" data-icon="check">check</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Engagement Sprint</h4>
+<p class="text-xs text-on-surface-variant">Reply to 50 comments on yesterday's viral post</p>
+</div>
+<span class="text-[10px] font-bold py-1 px-3 bg-primary-container text-on-primary-container rounded-full">Medium</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: News & Trending -->
+<aside class="md:col-span-4 space-y-8 px-2">
+<div class="bg-surface-container-high rounded-3xl p-6">
+<h2 class="text-xl font-extrabold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="trending_up">trending_up</span>
+                        Trending News
+                    </h2>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="w-full h-32 rounded-2xl overflow-hidden mb-3">
+<img alt="vibrant abstract digital art" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXYGBjZCxhdF-amLZ7Go7FEj7zZmOvWSrJj6YvaKh_thkARpwoLdK5H79OL_tvfoE29OFs0ZoSQSoTQzBcuLqZt3Q5O-NkXyv9FZqTwPMoyYYAS5CEtkAb3nTOEzJEGZZmrLpxP_PhRLWsKR6FPqVqkChPNRdGJU-R53PTry2dRipMCbEj9jzpq-X1tc5Nnb3aFbkfok3mgsUFU2XTN5mcChz0-k4T9QFGn44JZBLGtlleJ342iCFDPp2JgLbpVfhu6tppMPaDJKk"/>
+</div>
+<span class="text-[10px] font-bold text-tertiary uppercase tracking-widest">Technology</span>
+<h3 class="font-bold leading-snug">The Algorithm Shift: What creator need to know this quarter.</h3>
+<p class="text-xs text-on-surface-variant line-clamp-2">New shifts in social signals are favoring longer-form organic engagement over quick-hit viral hacks...</p>
+</div>
+<div class="h-[1px] bg-outline-variant/30"></div>
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Lifestyle</span>
+<h4 class="font-bold text-sm leading-tight mt-1">Minimalist Workspace trends hit peak popularity in 2024.</h4>
+</div>
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+<img alt="clean minimalist desk setup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoxuK-nfPEMAXu0JwSFECU7PsGyuw3owh96ZnaakuKlDYP5TxcZ8gQzDYarsLle3JuhQ2L-oFyzqp0tGNflLeiV5DoIch5zgrF0RXlkPCnVfjC2RtWAZVceKCm2Cl2YUkyfiw4gVvqnUHpBtJ_JlBQrpC2C3irCN2O83kAmDwH54AmkLvG2Ba1gN119LKlyUMKEJCaSUku3q72FRwoFXAfnfVeAfJgPEKX_kpYay45pPktd8V10OdLWbzmrH8r1cmyxw-rfmS10sj5"/>
+</div>
+</div>
+</div>
+<button class="w-full mt-8 py-3 rounded-xl bg-surface-container-lowest text-primary font-bold text-sm hover:bg-white transition-colors">
+                        View All News
+                    </button>
+</div>
+<div class="bg-white/40 backdrop-blur-xl border border-white/50 p-6 rounded-3xl">
+<h3 class="font-bold text-sm mb-4">Calendar Highlights</h3>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 bg-white/60 rounded-xl border border-white/40">
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-lg w-10 h-10 flex-shrink-0">
+<span class="text-[10px] font-bold uppercase leading-none">May</span>
+<span class="text-sm font-extrabold">15</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold truncate text-on-surface">Spring Collection Launch</h4>
+<p class="text-[10px] text-on-surface-variant">Main Studio • 10:00 AM</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff] dark:bg-stone-900 shadow-[0_-4px_20px_rgba(56,56,53,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center bg-[#ffc3be] dark:bg-[#fb5151]/20 text-[#383835] dark:text-[#ffc3be] rounded-full px-4 py-1 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Dash</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-stone-400 px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="newspaper">newspaper</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-stone-400 px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-stone-400 px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="checklist">checklist</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-stone-400 px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Map</span>
+</a>
+</nav>
+<!-- FAB -->
+<button class="fixed right-6 bottom-28 w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</body></html>
