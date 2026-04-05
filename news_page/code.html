@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier | Padel Daily News</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#c0262d",
+                        "surface": "#fffcf7",
+                        "surface-dim": "#e5e2dc",
+                        "on-tertiary-container": "#004f59",
+                        "secondary": "#93524d",
+                        "tertiary": "#006f7c",
+                        "surface-container-highest": "#eae8e2",
+                        "on-surface": "#383835",
+                        "outline": "#82807c",
+                        "inverse-surface": "#0e0e0c",
+                        "on-primary-fixed": "#052257",
+                        "primary-fixed": "#a7bdfb",
+                        "primary": "#4d639b",
+                        "on-background": "#383835",
+                        "surface-container": "#f6f3ee",
+                        "secondary-dim": "#854742",
+                        "surface-bright": "#fffcf7",
+                        "surface-container-low": "#fcf9f4",
+                        "secondary-container": "#ffc3be",
+                        "on-tertiary-fixed-variant": "#005964",
+                        "on-secondary-fixed-variant": "#7b3f3b",
+                        "on-secondary-fixed": "#592420",
+                        "error-container": "#fb5151",
+                        "on-surface-variant": "#656461",
+                        "on-primary-container": "#21386e",
+                        "primary-container": "#a7bdfb",
+                        "surface-variant": "#eae8e2",
+                        "inverse-primary": "#a7bdfb",
+                        "surface-tint": "#4d639b",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#88dfef",
+                        "outline-variant": "#bbb9b4",
+                        "inverse-on-surface": "#9e9d98",
+                        "on-tertiary-fixed": "#003a42",
+                        "tertiary-fixed-dim": "#79d1e0",
+                        "surface-container-high": "#f0eee8",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#88dfef",
+                        "on-error-container": "#570008",
+                        "background": "#fffcf7",
+                        "secondary-fixed-dim": "#ffafa8",
+                        "error-dim": "#9f0519",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#99afec",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffc3be",
+                        "on-secondary-container": "#703632",
+                        "on-primary-fixed-variant": "#2a4177",
+                        "on-primary": "#ffffff",
+                        "primary-dim": "#40578e",
+                        "tertiary-dim": "#00626e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .newspaper-columns {
+            column-count: 1;
+            column-gap: 2rem;
+        }
+        @media (min-width: 1024px) {
+            .newspaper-columns {
+                column-count: 2;
+            }
+        }
+        .editorial-rule {
+            height: 1px;
+            background-color: #bbb9b4;
+            opacity: 0.2;
+            margin: 1.5rem 0;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#fffcf7] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full sticky top-0 z-50 tonal-shift-bg">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a professional woman with a friendly smile in soft natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLaqfQCKh2xW81nac-PAeVaRxG5HVraCt0El1F_u8kSrTR0iZafgcGZ45R7stFYOdy16zLlGHMalWUzrBWaGsJCyg_wPLWIkb69JCoAP5MNqDsWBPKesnMxE5Y7UwWD2Vc1sz_-QR5m34ccfvmDh-8H5zQzJm1BOBtpcZAkVVTGYVlwteSaY1s_Ey98ee3g46uqf_pvQSTNAWm4hmFmwcKBGvuirgry6BGy33JdiMjb2AK8_HU4YNsj9f3_UKvvBHLeteWt0-s5YHc"/>
+</div>
+<h1 class="text-xl font-bold font-headline text-[#383835] dark:text-[#fcf9f4]">The Atelier</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="font-label text-sm font-medium text-[#656461] dark:text-[#bbb9b4] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors px-3 py-1 rounded-lg" href="#">Dash</a>
+<a class="font-label text-sm font-medium text-[#4d639b] dark:text-[#a7bdfb] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors px-3 py-1 rounded-lg" href="#">News</a>
+<a class="font-label text-sm font-medium text-[#656461] dark:text-[#bbb9b4] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors px-3 py-1 rounded-lg" href="#">Stats</a>
+<a class="font-label text-sm font-medium text-[#656461] dark:text-[#bbb9b4] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors px-3 py-1 rounded-lg" href="#">Tasks</a>
+<a class="font-label text-sm font-medium text-[#656461] dark:text-[#bbb9b4] hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors px-3 py-1 rounded-lg" href="#">Map</a>
+</nav>
+<button class="material-symbols-outlined text-[#4d639b] dark:text-[#a7bdfb] p-2 hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors rounded-full">search</button>
+</div>
+</header>
+<!-- Main Content: Newspaper Layout -->
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
+<!-- Newspaper Masthead -->
+<div class="text-center border-b border-outline-variant/20 pb-8 mb-10">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-2">Edition: Tuesday, May 23, 2024</p>
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface italic">The Padel Journal</h2>
+<div class="flex justify-center gap-8 mt-4 text-xs font-medium text-on-surface-variant">
+<span>VOL. LXIV ... No. 124</span>
+<span class="hidden md:inline">MALAGA, SPAIN</span>
+<span>PADEL WORLD TOUR EXCLUSIVE</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Main Headlines -->
+<div class="lg:col-span-8">
+<!-- Hero Article -->
+<article class="mb-12">
+<img class="w-full aspect-[21/9] object-cover rounded-xl mb-6 shadow-sm" data-alt="wide shot of a professional padel court with blue turf and glass walls during a high-stakes sunset match" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtCX4S30m8xlvJVqxiVjztv16etiMRA20eYCMuWlE4ldqgPmpWs5QwZncnPpoWB3iqsy8MB_foqaVg9rCKc9NZAEXMKYTKEUhUG9JfqQmrjo23idsTdHWrZg2SVOrjeox5RvxjLeN7qAwsnue8lugVpw0C5GVerNMkGPoy4IoI2nhO95t6atJ4LufjgJtsVHvmj4rXhh4BMcR7JkxfdophepMg0sHvhXsPXvh_WwTM9QdlTYEkSUu63z1nox9x6Rmc6BC66_p0RqOm"/>
+<div class="max-w-2xl">
+<span class="font-label text-[10px] font-bold text-primary uppercase tracking-widest bg-primary-container/30 px-2 py-0.5 rounded mb-4 inline-block">Breaking News</span>
+<h3 class="font-headline text-3xl md:text-4xl font-bold leading-tight mb-4 text-on-surface">The Rise of the 'Bandeja': How Modern Strategy is Reshaping the Court</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">In the high-velocity world of professional padel, a tactical revolution is quietly taking place. We explore why the world's top seeds are prioritizing precision over pure power in 2024.</p>
+<div class="flex items-center gap-3">
+<span class="font-label text-xs font-semibold text-on-surface">By Alejandro Vance</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label text-xs text-on-surface-variant">8 min read</span>
+</div>
+</div>
+</article>
+<div class="editorial-rule"></div>
+<!-- Multi-column News Grid -->
+<div class="newspaper-columns">
+<article class="mb-10 break-inside-avoid">
+<h4 class="font-headline text-xl font-bold mb-2">Reddit Trending: "My racket handle keeps snapping, help?"</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">A thread in r/padel has gone viral with over 4.2k upvotes discussing the durability of carbon-frame rackets in high humidity climates...</p>
+<div class="flex gap-4 text-primary text-xs font-bold items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>421 Comments</span>
+</div>
+</article>
+<article class="mb-10 break-inside-avoid">
+<img class="w-full aspect-video object-cover rounded-lg mb-4" data-alt="close-up of several yellow padel balls in a minimalist glass container on a wooden bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuButn9FTR9tAA0jckidw-pdN2BShcHbdaR1ObozUJP8jDOj7DdoHCpu5UXhPwxDfHv3N_Q-meNf9hHCVawfhHahuO3u0dJkU1sX2_i8WMtAy0OsNLDLDQBJbrvDdbjp-ACH4JBgw4Ikk_ul2EvwavoYKMUpE3GDFbK4muG9xNGY3WVBsKRMYIpivk9uLW6lfovKpijKe88L-H7msGJtAdJ_V7OU9JzEu_O9uitGllo4fNASh9QabO2mxx3YJ-2Vckbz6IybW3hU6lIJ"/>
+<h4 class="font-headline text-xl font-bold mb-2">New Tech: Smart Grips hitting the market in Q3</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Startup 'Atelier Padel' announces sensor-embedded overgrips that track vibration intensity and stroke frequency in real-time.</p>
+</article>
+<article class="mb-10 break-inside-avoid">
+<h4 class="font-headline text-xl font-bold mb-2">The 'Lob' Masterclass: 5 Pros who dominate the back wall</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Deep analysis of the defensive strategies employed by the top 10 players in the current rankings. It's not about the hit, it's about the arc.</p>
+</article>
+<article class="mb-10 break-inside-avoid">
+<h4 class="font-headline text-xl font-bold mb-2">Malaga Open: Ticket sales break 10-year record</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">The upcoming tournament in Andalusia sees a 40% surge in international bookings compared to last year's season opener.</p>
+</article>
+</div>
+</div>
+<!-- Right Column: Sidebar -->
+<aside class="lg:col-span-4 space-y-10">
+<!-- Trending Now Card -->
+<section class="bg-surface-container rounded-2xl p-6 border border-outline-variant/10">
+<h5 class="font-headline text-sm font-extrabold uppercase tracking-widest mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-weight="fill">bolt</span>
+                        Trending Now
+                    </h5>
+<ul class="space-y-6">
+<li class="flex gap-4 items-start">
+<span class="font-headline text-2xl font-bold text-outline-variant/40 italic">01</span>
+<div>
+<h6 class="font-bold text-sm leading-snug mb-1">Coello/Tapia maintain world #1 spot after Rome Final</h6>
+<span class="font-label text-[10px] text-on-surface-variant">2 hours ago</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<span class="font-headline text-2xl font-bold text-outline-variant/40 italic">02</span>
+<div>
+<h6 class="font-bold text-sm leading-snug mb-1">New r/padel consensus: Are round rackets better for beginners?</h6>
+<span class="font-label text-[10px] text-on-surface-variant">4 hours ago</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<span class="font-headline text-2xl font-bold text-outline-variant/40 italic">03</span>
+<div>
+<h6 class="font-bold text-sm leading-snug mb-1">Indoor vs Outdoor: The scientific performance gap</h6>
+<span class="font-label text-[10px] text-on-surface-variant">Yesterday</span>
+</div>
+</li>
+</ul>
+</section>
+<!-- Reddit Spotlight -->
+<section class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-6 h-6 rounded-full bg-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-white" data-weight="fill">forum</span>
+</div>
+<h5 class="font-headline text-sm font-extrabold uppercase tracking-widest">Reddit Pulse</h5>
+</div>
+<div class="space-y-4">
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<p class="text-xs font-medium text-on-surface-variant mb-2">r/padel • Posted by u/SpinKing</p>
+<p class="text-sm font-bold leading-tight">PSA: Stop buying expensive rackets until you fix your footwork!</p>
+<div class="mt-3 flex items-center gap-4 text-[10px] font-bold text-tertiary">
+<span>↑ 1.8k</span>
+<span>342 Comments</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-sm">
+<p class="text-xs font-medium text-on-surface-variant mb-2">r/padel • Posted by u/CourtMaster</p>
+<p class="text-sm font-bold leading-tight">Best shoes for clay courts in 2024? [Megathread]</p>
+<div class="mt-3 flex items-center gap-4 text-[10px] font-bold text-tertiary">
+<span>↑ 856</span>
+<span>156 Comments</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-3 rounded-xl bg-secondary-container text-on-secondary-container font-label text-xs font-bold hover:opacity-80 transition-opacity">Visit Subreddit</button>
+</section>
+<!-- Newsletter Signup -->
+<section class="bg-primary-container/20 rounded-2xl p-6 text-center border border-primary/10">
+<h5 class="font-headline text-lg font-bold mb-2">The Sunday Serve</h5>
+<p class="text-xs text-on-surface-variant mb-6">The only weekly padel newsletter you'll ever need. Pure strategy, no fluff.</p>
+<div class="space-y-3">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Email address" type="email"/>
+<button class="w-full py-3 rounded-xl bg-primary text-white font-label text-xs font-bold hover:scale-[1.02] transition-transform">Subscribe Now</button>
+</div>
+</section>
+</aside>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_-12px_32px_rgba(56,56,53,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Dash</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#ffc3be] dark:bg-[#4d639b]/30 text-[#383835] dark:text-[#fcf9f4] rounded-full px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">newspaper</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1">analytics</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1">assignment</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1">map</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Map</span>
+</a>
+</nav>
+</body></html>
