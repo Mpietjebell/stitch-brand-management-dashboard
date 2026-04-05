@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Atelier - Strategic Roadmap</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#c0262d",
+                    "surface": "#fffcf7",
+                    "surface-dim": "#e5e2dc",
+                    "on-tertiary-container": "#004f59",
+                    "secondary": "#93524d",
+                    "tertiary": "#006f7c",
+                    "surface-container-highest": "#eae8e2",
+                    "on-surface": "#383835",
+                    "outline": "#82807c",
+                    "inverse-surface": "#0e0e0c",
+                    "on-primary-fixed": "#052257",
+                    "primary-fixed": "#a7bdfb",
+                    "primary": "#4d639b",
+                    "on-background": "#383835",
+                    "surface-container": "#f6f3ee",
+                    "secondary-dim": "#854742",
+                    "surface-bright": "#fffcf7",
+                    "surface-container-low": "#fcf9f4",
+                    "secondary-container": "#ffc3be",
+                    "on-tertiary-fixed-variant": "#005964",
+                    "on-secondary-fixed-variant": "#7b3f3b",
+                    "on-secondary-fixed": "#592420",
+                    "error-container": "#fb5151",
+                    "on-surface-variant": "#656461",
+                    "on-primary-container": "#21386e",
+                    "primary-container": "#a7bdfb",
+                    "surface-variant": "#eae8e2",
+                    "inverse-primary": "#a7bdfb",
+                    "surface-tint": "#4d639b",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#88dfef",
+                    "outline-variant": "#bbb9b4",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-tertiary-fixed": "#003a42",
+                    "tertiary-fixed-dim": "#79d1e0",
+                    "surface-container-high": "#f0eee8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#88dfef",
+                    "on-error-container": "#570008",
+                    "background": "#fffcf7",
+                    "secondary-fixed-dim": "#ffafa8",
+                    "error-dim": "#9f0519",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#99afec",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffc3be",
+                    "on-secondary-container": "#703632",
+                    "on-primary-fixed-variant": "#2a4177",
+                    "on-primary": "#ffffff",
+                    "primary-dim": "#40578e",
+                    "tertiary-dim": "#00626e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#fffcf7] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full sticky top-0 z-40 tonal-shift-bg">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional man in a beige linen shirt against a soft cream studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCngxotwOG6P8pVL0MVGELoVJaM7ncat2j1NL5kpgFouCF2n9JSV1XxooZqDpaknxzdpzixhPlqOiNcGGNxxtku32t28dzYgUSHa3FU_DAeLWJqMhM1aKJlbv97vYwcev1_ypfjZ5AN7IMsjyL-Vq4-4yOZBihq2hZlkTHCeygF-K4Qm5XPyihAXDajWqtzxOH75UzsxeftL8upNPaVoRbkqMqoGd089JTRRkq8oyKgkJZdMCobSnaBFJgTldXOCDic_baFSQnl0_wi"/>
+</div>
+<span class="text-xl font-bold font-manrope text-[#383835] dark:text-[#fcf9f4]">The Atelier</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#fcf9f4] dark:hover:bg-stone-900 transition-colors tap-highlight-none active:scale-95 text-[#4d639b] dark:text-[#a7bdfb]">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</header>
+<main class="max-w-6xl mx-auto px-6 py-8">
+<!-- Hero Section -->
+<section class="mb-12">
+<h1 class="text-4xl font-extrabold tracking-tight mb-2 text-on-surface">Strategic Horizons</h1>
+<p class="text-on-surface-variant max-w-xl leading-relaxed">A curated vision of our artisanal growth and product evolution through 2026. Each milestone is a craft-centered objective.</p>
+</section>
+<!-- Timeline Container -->
+<div class="relative">
+<!-- Vertical Line (Visible on Mobile) -->
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant/30 md:-translate-x-1/2"></div>
+<!-- 2024 Phase -->
+<div class="mb-24 relative">
+<div class="flex items-center justify-start md:justify-center mb-10">
+<span class="bg-surface-container px-6 py-2 rounded-full font-headline font-bold text-primary tracking-widest text-sm z-10">PHASE I: REFINEMENT 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<!-- Q3 2024 -->
+<div class="relative pl-12 md:pl-0 md:text-right md:pr-12 group">
+<div class="absolute left-3.5 md:left-auto md:right-[-9px] top-4 w-4 h-4 bg-primary border-4 border-surface rounded-full z-20 group-hover:scale-125 transition-transform"></div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_12px_32px_rgba(56,56,53,0.04)] border border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary mb-2 block">Q3 2024</span>
+<h3 class="text-2xl font-bold mb-3">Core Engine Polish</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Optimizing the artisanal workspace with AI-driven resource allocation and a new geometric layout engine.</p>
+<div class="flex flex-wrap gap-2 md:justify-end">
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-[10px] font-medium text-on-surface-variant">INFRASTRUCTURE</span>
+<span class="bg-tertiary-container/30 px-3 py-1 rounded-full text-[10px] font-medium text-on-tertiary-container">90% READY</span>
+</div>
+</div>
+</div>
+<!-- Q4 2024 -->
+<div class="relative pl-12 md:mt-24 group">
+<div class="absolute left-3.5 md:left-[-9px] top-4 w-4 h-4 bg-secondary border-4 border-surface rounded-full z-20 group-hover:scale-125 transition-transform"></div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_12px_32px_rgba(56,56,53,0.04)] border border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">Q4 2024</span>
+<h3 class="text-2xl font-bold mb-3">Community Atelier</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Launching collaborative spaces where designers can share component patterns in a peer-vetted marketplace.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container px-3 py-1 rounded-full text-[10px] font-medium text-on-secondary-container">SOCIAL HUB</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-[10px] font-medium text-on-surface-variant">BETA ACCESS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2025 Phase -->
+<div class="mb-24 relative">
+<div class="flex items-center justify-start md:justify-center mb-10">
+<span class="bg-surface-container px-6 py-2 rounded-full font-headline font-bold text-primary tracking-widest text-sm z-10">PHASE II: EXPANSION 2025</span>
+</div>
+<!-- Featured Milestone (Large Card) -->
+<div class="md:px-24 mb-16">
+<div class="relative group">
+<div class="hidden md:block absolute left-1/2 -top-10 bottom-0 w-px bg-outline-variant/30 -translate-x-1/2"></div>
+<div class="bg-primary p-1 rounded-3xl overflow-hidden shadow-2xl">
+<div class="bg-surface-container-lowest rounded-[1.25rem] p-10 flex flex-col md:flex-row gap-8 items-center">
+<div class="md:w-1/2">
+<div class="w-full h-48 rounded-2xl bg-surface-container-high overflow-hidden">
+<img alt="Analytics Dashboard View" class="w-full h-full object-cover" data-alt="Sophisticated minimalist glass dashboard interface showing abstract data visualizations in soft blue and pink tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBrMVACviVhidd8A6VDV2bCS3KU9PzZGpD1zQSjtsjHDfJkK36g0Pdy4AI1bWf-8Yiuceroabfsax4YyoF_B_5jV1bydKivBTPTW5aDkNYLPEfx_PmezSPH5PfLtqlsLcsXxzGBKZVGfmOg-HNbIrsC60iM2pkGl6e5OnhctOpWkSpocGPuDvswLkbKXfmG8JnC8qkzfmwYjuoRJM2SyTk-Pgax0mU7w9NLM59J8MiMrrm_Qroh7UvZctcR52HKDUEAElrQ6zIy3z"/>
+</div>
+</div>
+<div class="md:w-1/2">
+<span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">SPRING 2025</span>
+<h3 class="text-3xl font-bold mb-4 tracking-tight">The Mobile Atelier Pro</h3>
+<p class="text-on-surface-variant text-base leading-relaxed mb-6">A groundbreaking mobile experience that brings the full design system capability to tablet and phone with haptic precision.</p>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-medium flex items-center gap-2 hover:opacity-90 transition-opacity">
+                                        View Specs
+                                        <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<!-- Q3 2025 -->
+<div class="relative pl-12 md:pl-0 md:text-right md:pr-12 group md:translate-y-12">
+<div class="absolute left-3.5 md:left-auto md:right-[-9px] top-4 w-4 h-4 bg-tertiary border-4 border-surface rounded-full z-20 group-hover:scale-125 transition-transform"></div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_12px_32px_rgba(56,56,53,0.04)] border border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary mb-2 block">Q3 2025</span>
+<h3 class="text-2xl font-bold mb-3">Global CDN Nodes</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Deploying edge servers in 12 new regions to ensure sub-100ms response times for all global atelier workspaces.</p>
+</div>
+</div>
+<!-- Q4 2025 -->
+<div class="relative pl-12 group md:translate-y-36">
+<div class="absolute left-3.5 md:left-[-9px] top-4 w-4 h-4 bg-outline border-4 border-surface rounded-full z-20 group-hover:scale-125 transition-transform"></div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_12px_32px_rgba(56,56,53,0.04)] border border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Q4 2025</span>
+<h3 class="text-2xl font-bold mb-3">Eco-Compute Logic</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Introducing low-energy processing modes for background tasks, offsetting 100% of our server carbon footprint.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 2026 Vision -->
+<div class="mt-48 relative">
+<div class="flex items-center justify-start md:justify-center mb-10">
+<span class="bg-surface-container px-6 py-2 rounded-full font-headline font-bold text-primary tracking-widest text-sm z-10">THE 2026 VISION</span>
+</div>
+<div class="max-w-3xl mx-auto">
+<div class="relative bg-surface-container-high rounded-[3rem] p-12 overflow-hidden text-center">
+<!-- Abstract Glass Decoration -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary-container/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-secondary-container/20 blur-[100px] rounded-full"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h2 class="text-4xl font-extrabold mb-6">Generative Spatiality</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Moving beyond screens into immersive spatial computing interfaces. The Atelier becomes a physical dimension of your creative workflow.</p>
+<div class="inline-flex items-center px-4 py-2 bg-white rounded-full text-xs font-bold text-primary shadow-sm">
+<span class="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
+                                R&amp;D IN PROGRESS
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_-12px_32px_rgba(56,56,53,0.04)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Dash</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="newspaper">newspaper</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">News</span>
+</a>
+<!-- Active Item: Stats (Assuming Roadmap is part of planning/stats/analytics ecosystem) -->
+<a class="flex flex-col items-center justify-center bg-[#ffc3be] dark:bg-[#4d639b]/30 text-[#383835] dark:text-[#fcf9f4] rounded-full px-4 py-1 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="analytics" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-opacity active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Map</span>
+</a>
+</nav>
+</body></html>
