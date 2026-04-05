@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#c0262d",
+                    "surface": "#fffcf7",
+                    "surface-dim": "#e5e2dc",
+                    "on-tertiary-container": "#004f59",
+                    "secondary": "#93524d",
+                    "tertiary": "#006f7c",
+                    "surface-container-highest": "#eae8e2",
+                    "on-surface": "#383835",
+                    "outline": "#82807c",
+                    "inverse-surface": "#0e0e0c",
+                    "on-primary-fixed": "#052257",
+                    "primary-fixed": "#a7bdfb",
+                    "primary": "#4d639b",
+                    "on-background": "#383835",
+                    "surface-container": "#f6f3ee",
+                    "secondary-dim": "#854742",
+                    "surface-bright": "#fffcf7",
+                    "surface-container-low": "#fcf9f4",
+                    "secondary-container": "#ffc3be",
+                    "on-tertiary-fixed-variant": "#005964",
+                    "on-secondary-fixed-variant": "#7b3f3b",
+                    "on-secondary-fixed": "#592420",
+                    "error-container": "#fb5151",
+                    "on-surface-variant": "#656461",
+                    "on-primary-container": "#21386e",
+                    "primary-container": "#a7bdfb",
+                    "surface-variant": "#eae8e2",
+                    "inverse-primary": "#a7bdfb",
+                    "surface-tint": "#4d639b",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#88dfef",
+                    "outline-variant": "#bbb9b4",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-tertiary-fixed": "#003a42",
+                    "tertiary-fixed-dim": "#79d1e0",
+                    "surface-container-high": "#f0eee8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#88dfef",
+                    "on-error-container": "#570008",
+                    "background": "#fffcf7",
+                    "secondary-fixed-dim": "#ffafa8",
+                    "error-dim": "#9f0519",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#99afec",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffc3be",
+                    "on-secondary-container": "#703632",
+                    "on-primary-fixed-variant": "#2a4177",
+                    "on-primary": "#ffffff",
+                    "primary-dim": "#40578e",
+                    "tertiary-dim": "#00626e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg {
+            background-color: #fffcf7;
+        }
+        .tap-highlight-none {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<nav class="bg-[#fffcf7] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img alt="User Profile Avatar" data-alt="Close-up portrait of a professional creative in a bright airy studio, soft natural light, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQnMDkzkjzkq-Tz4WaJEvAt8GXYhch159ah6ImZvvL2ipHVBKbiniFgvWzc611D_BcWhrc6tily8xTac1RXkf1tnqmfw3H0VNWXPY4yIjj-gEEji1kKPosNKfivErnUvL8YcGO37cLNf-qZBj3U1CXE9aO-JOTsPllsirsV_N9QZPaij05OFDJJ78blu6L1AlSSqY2RUpTcdZ7Ez2KfMPRlfAC1EbhzdWi6NdEf1qYy7-J0PgV8RQJBCTVZFezoPkfq6EUeH4ERIr_"/>
+</div>
+<h1 class="text-xl font-bold font-headline text-[#383835] dark:text-[#fcf9f4]">The Atelier</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#4d639b] dark:text-[#a7bdfb] font-inter text-sm font-medium hover:bg-[#fcf9f4] dark:hover:bg-stone-900 px-3 py-2 rounded-xl transition-colors" href="#">Dash</a>
+<a class="text-[#656461] dark:text-[#bbb9b4] font-inter text-sm font-medium hover:bg-[#fcf9f4] dark:hover:bg-stone-900 px-3 py-2 rounded-xl transition-colors" href="#">News</a>
+<a class="text-[#656461] dark:text-[#bbb9b4] font-inter text-sm font-medium hover:bg-[#fcf9f4] dark:hover:bg-stone-900 px-3 py-2 rounded-xl transition-colors" href="#">Stats</a>
+<a class="text-[#656461] dark:text-[#bbb9b4] font-inter text-sm font-medium hover:bg-[#fcf9f4] dark:hover:bg-stone-900 px-3 py-2 rounded-xl transition-colors" href="#">Tasks</a>
+<a class="text-[#656461] dark:text-[#bbb9b4] font-inter text-sm font-medium hover:bg-[#fcf9f4] dark:hover:bg-stone-900 px-3 py-2 rounded-xl transition-colors" href="#">Map</a>
+</div>
+<button class="material-symbols-outlined text-[#4d639b] dark:text-[#a7bdfb] p-2 hover:bg-[#fcf9f4] dark:hover:bg-stone-900 rounded-full transition-colors active:scale-95">
+            search
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center p-6 md:p-12">
+<div class="max-w-4xl w-full">
+<!-- Hero Bento Header -->
+<div class="mb-12 text-center">
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-on-surface mb-4">
+                    NOPA HQ
+                </h2>
+<div class="inline-flex items-center px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-semibold tracking-wide">
+                    STATION UNDER CONSTRUCTION
+                </div>
+</div>
+<!-- Placeholder Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Coming Soon Card -->
+<div class="md:col-span-2 relative overflow-hidden bg-surface-container-lowest rounded-3xl p-10 min-h-[400px] flex flex-col justify-end group">
+<!-- Subtle Texture Background -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMQJX2PpN761UsmaZ_av7Q1QC95g61r_WZUeqXlnIK62nb7n3Qi5_JGW2vWr5_-gMoqrK09jSI_YghqS0IuEqDQIpDA8LXcH5-NewWt2GehitCSEsazprtBijz8zN_ASIuMMX9ar3o9YmI_1aFi-E_Yy9D76l-i6iajgdI6GX0kX9xYDW5IhhHf7adVhvj2EzFg9_41d3FGK9TPZ1mAW69z_YQfKrr33Bi7y_65WRGyB_ZY8B8tDeBYYbXe0sHFYfZ2R9YgsbgxOuK');"></div>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-primary font-headline text-lg font-bold block mb-2">Operational Nexus</span>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">The command center for your creative workflow is being refined.</h3>
+<p class="text-on-surface-variant max-w-md leading-relaxed">
+                            We are hand-crafting a new experience to manage NOPA assets, team collaborations, and high-level strategy within the Atelier ecosystem.
+                        </p>
+</div>
+<!-- Abstract Decorative Element -->
+<div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-tertiary-container/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
+</div>
+<!-- Side Stats/Info Grid -->
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container rounded-3xl p-8 flex-1 flex flex-col justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">construction</span>
+<div class="text-2xl font-headline font-bold text-on-surface">94%</div>
+<div class="text-sm text-on-surface-variant font-medium">Refining Interfaces</div>
+</div>
+<div class="bg-primary-container/20 rounded-3xl p-8 flex-1 flex flex-col justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">auto_awesome</span>
+<div class="text-2xl font-headline font-bold text-on-surface">Soon</div>
+<div class="text-sm text-on-surface-variant font-medium">Bespoke Intelligence</div>
+</div>
+</div>
+<!-- Full Width Visual Anchor -->
+<div class="md:col-span-3 h-48 bg-surface-container-high rounded-3xl overflow-hidden relative group">
+<img alt="NOPA Architecture" class="w-full h-full object-cover grayscale opacity-30 group-hover:scale-105 transition-transform duration-1000" data-alt="Minimalist modern office interior with large windows, soft morning light, and clean architectural lines in a neutral palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsADa0BSkHuphu1vZ9C9NlGej2e7QNYsROunCDti8FwwElyfpCG3lB5TWB4a9xYZUOr_fhgbPRrpP-FGEpdYwgOgWbb7C4W3Fz1iE9jQ5c5U_41CoVOdwqYGlJlc7ULckk4CiQqloAsVEp-CGB-7GEBSace1mggAfuaPWPZGLUe8CLx8mMO7dAqRQvxgDmvYLSOuWz9xy5ONMj4OAXwxYv_5FHG2Z10sDULphqPgjob6IhYJeet0T7ePV_P05g8b-63mMGvrqqEeec"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface/80 backdrop-blur-md px-8 py-3 rounded-2xl border border-white/50">
+<span class="text-on-surface font-headline font-bold tracking-widest text-xs uppercase">Est. Arrival Q4 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Spacer for Bottom Nav -->
+<div class="h-24 md:hidden"></div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-t-3xl shadow-[0_-12px_32px_rgba(56,56,53,0.04)] md:hidden">
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Dash</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">newspaper</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">News</span>
+</a>
+<!-- Stats Active State (Mapping 'NOPA HQ' to Stats/High-level view) -->
+<a class="flex flex-col items-center justify-center bg-[#ffc3be] dark:bg-[#4d639b]/30 text-[#383835] dark:text-[#fcf9f4] rounded-full px-4 py-1 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">analytics</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">assignment</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#656461] dark:text-[#bbb9b4] px-4 py-1 hover:opacity-80 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">map</span>
+<span class="font-inter text-[10px] font-medium tracking-tight">Map</span>
+</a>
+</nav>
+</body></html>
